@@ -8,3 +8,5 @@
 <%= link_to '<back', tasks_path %>
 <br>
 <%= link_to 'edit task', edit_task_path %>
+<br>
+<%= link_to 'delete task', destroy_task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %>
